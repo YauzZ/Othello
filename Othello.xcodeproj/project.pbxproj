@@ -16,6 +16,7 @@
 		3B5A71F2174CB6FD00E7D8C3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B5A71F1174CB6FD00E7D8C3 /* Default.png */; };
 		3B5A71F4174CB6FD00E7D8C3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B5A71F3174CB6FD00E7D8C3 /* Default@2x.png */; };
 		3B5A71F6174CB6FD00E7D8C3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B5A71F5174CB6FD00E7D8C3 /* Default-568h@2x.png */; };
+		3B5A71FE174CB76100E7D8C3 /* ChessBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A71FD174CB76100E7D8C3 /* ChessBoard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		3B5A71F1174CB6FD00E7D8C3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3B5A71F3174CB6FD00E7D8C3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3B5A71F5174CB6FD00E7D8C3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3B5A71FC174CB76100E7D8C3 /* ChessBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChessBoard.h; sourceTree = "<group>"; };
+		3B5A71FD174CB76100E7D8C3 /* ChessBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChessBoard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 			children = (
 				3B5A71EE174CB6FD00E7D8C3 /* AppDelegate.h */,
 				3B5A71EF174CB6FD00E7D8C3 /* AppDelegate.m */,
+				3B5A71FC174CB76100E7D8C3 /* ChessBoard.h */,
+				3B5A71FD174CB76100E7D8C3 /* ChessBoard.m */,
 				3B5A71E6174CB6FD00E7D8C3 /* Supporting Files */,
 			);
 			path = Othello;
@@ -166,6 +171,7 @@
 			files = (
 				3B5A71EC174CB6FD00E7D8C3 /* main.m in Sources */,
 				3B5A71F0174CB6FD00E7D8C3 /* AppDelegate.m in Sources */,
+				3B5A71FE174CB76100E7D8C3 /* ChessBoard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
