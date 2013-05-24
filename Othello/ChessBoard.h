@@ -18,6 +18,17 @@ typedef enum {
     ChessCellStatusExist ,
 }ChessCellStatus;
 
+typedef enum {
+    ChessCellDirectionTopLeft,
+    ChessCellDirectionTop,
+    ChessCellDirectionTopRight,
+    ChessCellDirectionRight,
+    ChessCellDirectionLowRight,
+    ChessCellDirectionLow,
+    ChessCellDirectionLowLeft,
+    ChessCellDirectionLeft,
+}ChessCellDirection;
+
 @interface ChessBoard : NSObject
 
 @property (nonatomic ,retain) NSMutableDictionary *chessboard;
