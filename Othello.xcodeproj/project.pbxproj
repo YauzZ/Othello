@@ -17,6 +17,7 @@
 		3B5A71F4174CB6FD00E7D8C3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B5A71F3174CB6FD00E7D8C3 /* Default@2x.png */; };
 		3B5A71F6174CB6FD00E7D8C3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B5A71F5174CB6FD00E7D8C3 /* Default-568h@2x.png */; };
 		3B5A71FE174CB76100E7D8C3 /* ChessBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A71FD174CB76100E7D8C3 /* ChessBoard.m */; };
+		55710732174FBF5C00353970 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55710731174FBF5C00353970 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		3B5A71F5174CB6FD00E7D8C3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3B5A71FC174CB76100E7D8C3 /* ChessBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChessBoard.h; sourceTree = "<group>"; };
 		3B5A71FD174CB76100E7D8C3 /* ChessBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChessBoard.m; sourceTree = "<group>"; };
+		55710730174FBF5C00353970 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		55710731174FBF5C00353970 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				3B5A71EF174CB6FD00E7D8C3 /* AppDelegate.m */,
 				3B5A71FC174CB76100E7D8C3 /* ChessBoard.h */,
 				3B5A71FD174CB76100E7D8C3 /* ChessBoard.m */,
+				55710730174FBF5C00353970 /* MainViewController.h */,
+				55710731174FBF5C00353970 /* MainViewController.m */,
 				3B5A71E6174CB6FD00E7D8C3 /* Supporting Files */,
 			);
 			path = Othello;
@@ -172,6 +177,7 @@
 				3B5A71EC174CB6FD00E7D8C3 /* main.m in Sources */,
 				3B5A71F0174CB6FD00E7D8C3 /* AppDelegate.m in Sources */,
 				3B5A71FE174CB76100E7D8C3 /* ChessBoard.m in Sources */,
+				55710732174FBF5C00353970 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +292,7 @@
 				3B5A71FB174CB6FD00E7D8C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

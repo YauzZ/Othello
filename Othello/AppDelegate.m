@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ChessBoard.h"
+#import "MainViewController.h"
 
 @implementation AppDelegate
 
@@ -21,10 +22,12 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor redColor];
+    MainViewController *viewController = [[[MainViewController alloc] init] autorelease];
+    self.window.rootViewController = viewController;
     
-    ChessBoard *chess = [[[ChessBoard alloc] init] autorelease];
-    [chess test];
+//    ChessBoard *chess = [[[ChessBoard alloc] init] autorelease];
+//    [chess test];
     
     [self.window makeKeyAndVisible];
     return YES;

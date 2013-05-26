@@ -9,16 +9,6 @@
 #import <Foundation/Foundation.h>
 
 typedef enum {
-    ChessTypeWhite ,
-    ChessTypeBlack ,
-}ChessType;
-
-typedef enum {
-    ChessCellStatusNull ,
-    ChessCellStatusExist ,
-}ChessCellStatus;
-
-typedef enum {
     ChessCellDirectionTopLeft,
     ChessCellDirectionTop,
     ChessCellDirectionTopRight,
@@ -31,13 +21,17 @@ typedef enum {
 
 @interface ChessBoard : NSObject
 
-@property (nonatomic ,retain) NSMutableDictionary *chessboard;
+@property (nonatomic , retain, readonly) NSMutableDictionary *chessboard;
 
-//@property (nonatomic ,assign) char chessboard[8][8];
+@property (nonatomic ,retain) NSString *white; // 白子
+@property (nonatomic ,retain) NSString *black; // 黑子
+@property (nonatomic ,retain) NSString *blank;// 无子
+@property (nonatomic ,retain) NSString *null;  // 无效的格子
 
-
-
-
+@property (nonatomic, retain) NSString *currentPlayer;
+- (void)initializeChessBoard;
+- (BOOL)isCanLayDownAtPosition:(NSString *)position withPlayer:(NSString *)player;
+- (NSArray *)layDownAtPosition:(NSString *)position withPlayer:(NSString *)player;
 - (void)test;
 
 @end
