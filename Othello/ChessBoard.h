@@ -30,8 +30,8 @@ typedef enum {
 
 @property (nonatomic, retain) NSString *currentPlayer;
 - (void)initializeChessBoard;
-- (BOOL)isCanLayDownAtPosition:(NSString *)position withPlayer:(NSString *)player;
-- (NSArray *)layDownAtPosition:(NSString *)position withPlayer:(NSString *)player;
+- (NSArray *)layDownAtPosition:(NSString *)position;
+- (NSArray *)allAllowablePositions;
 - (void)test;
 
 @end

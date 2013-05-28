@@ -26,7 +26,6 @@
     if (self) {
         self.chessboard = [[[ChessBoard alloc] init] autorelease];
         [_chessboard initializeChessBoard];
-        _currentPlayer = _chessboard.black;
     }
     return self;
 }
@@ -94,27 +93,16 @@
     }
 }
 
-- (void)switchPlayer
-{
-    if ([_currentPlayer isEqualToString:_chessboard.black]) {
-        _currentPlayer = _chessboard.white;
-    } else {
-        _currentPlayer = _chessboard.black;
-    }
-}
-
 - (void)tapChess:(UITapGestureRecognizer *)sender
 {
-    NSLog(@"%@",sender.view);
-    
     if (sender.view.backgroundColor == [UIColor blackColor] || sender.view.backgroundColor == [UIColor whiteColor]) {
         return;
     } else {
         NSString *postion = [self getPositionWithPoint:sender.view.frame.origin];
-        if ([_chessboard isCanLayDownAtPosition:postion withPlayer:_currentPlayer]) {
-            [_chessboard layDownAtPosition:postion withPlayer:_currentPlayer];
+        NSArray *allowablePositions = [_chessboard allAllowablePositions];
+        if ([allowablePositions indexOfObject:postion] != NSNotFound) {
+            [_chessboard layDownAtPosition:postion];
             [self refreshChessboard];
-            [self switchPlayer];
         }
     }
 }

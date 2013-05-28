@@ -161,7 +161,7 @@
 - (NSString *)getOpponentWithPlayer:(NSString *)player
 {
     if (![self isValidPlayer:player]) {
-        return NO;
+        return _null;
     }
     
     if ([player isEqualToString:_black]) {
@@ -169,6 +169,22 @@
     } else {
         return _black;
     }
+}
+
+- (NSArray *)allAllowablePositions
+{
+    NSMutableArray *array = [NSMutableArray array];
+    for (NSString *position in _chessboard.allKeys) {
+        if ([self isCanLayDownAtPosition:position withPlayer:_currentPlayer]) {
+            [array addObject:position];
+        }
+    }
+    return array;
+}
+
+- (NSArray *)layDownAtPosition:(NSString *)position
+{
+    return [self layDownAtPosition:position withPlayer:_currentPlayer];
 }
 
 // 在棋盘上放下棋子,返回需要变换状态的棋子列表
